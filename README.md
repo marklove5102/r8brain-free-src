@@ -145,6 +145,9 @@ demonstrated in the `example.cpp` file, for a real-time resampling a "pull"
 method should be used which calls the resampling process until the output
 buffer is filled.
 
+The overall input-to-output delay or latency can be obtained via the
+`CDSPResampler::getInputRequiredForOutput()` function.
+
 ## Notes
 
 When using the **r8b::CDSPResampler** class directly, you may select the
